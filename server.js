@@ -24,6 +24,13 @@ mongoose.connect(dbConfig.url, {
     process.exit()
 })
 
+// Работа с базой данных 
+app.get('/city', (request, response) => {
+    // db.collection('city')
+})
+
+
+
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (request, response) => {
